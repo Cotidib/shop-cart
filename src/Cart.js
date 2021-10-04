@@ -3,7 +3,7 @@ import CartItem from './CartItem'
 import { useGlobalContext } from './context'
 
 function Cart() {
-    const { cart } = useGlobalContext();
+    const { cart, total } = useGlobalContext();
 
     if (cart.length === 0) {
         return (
@@ -27,7 +27,7 @@ function Cart() {
         <hr/>
         <div className='total-price-container'>
             <h4>Total</h4>
-            <p>tot</p>
+            <p>$ {total}</p>
         </div>
         </section>
     )

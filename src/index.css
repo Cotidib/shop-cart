@@ -48,7 +48,8 @@ nav h3{
 
 /* CART LIST */
 
-h2{
+h2,
+.empty-cart{
   text-align: center;
   font-family: 'Open Sans', sans-serif;
 }
