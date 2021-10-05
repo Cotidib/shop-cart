@@ -3,7 +3,7 @@ import { useGlobalContext } from './context'
 import { MdOutlineKeyboardArrowUp, MdOutlineKeyboardArrowDown } from 'react-icons/md';
 
 function CartItem({ id, img, title, price, amount }) {
-    const {remove, increase, decrease} = useGlobalContext();
+    const {remove, toggleAmount} = useGlobalContext();
 
     return (
         <article className='item-box'>
@@ -16,9 +16,9 @@ function CartItem({ id, img, title, price, amount }) {
                 </div>
             </div>
             <div className='item-amount-container'>
-                <button onClick={()=>increase(id)}><MdOutlineKeyboardArrowUp/></button>
+                <button onClick={()=>toggleAmount(id,'increase')}><MdOutlineKeyboardArrowUp/></button>
                 <span className='item-amount'>{amount}</span>
-                <button onClick={()=>decrease(id)}><MdOutlineKeyboardArrowDown/></button>
+                <button onClick={()=>toggleAmount(id, 'decrease')}><MdOutlineKeyboardArrowDown/></button>
             </div>
         </article>
     )

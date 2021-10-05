@@ -18,7 +18,6 @@ function Cart() {
 
     return (
         <section className='cart-container'>
-        <h2>Your Cart</h2>
         <div className='cart-list'>
              {cart.map((item) => {
           return <CartItem key={item.id} {...item} />
