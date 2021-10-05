@@ -5,7 +5,7 @@ This is my version of the Cart project in ['Code 15 React Projects' course by Jo
 
 ### Overview and Learnings
 
-Main React functionalities I learned: use reducer and use context.
+Main React functionalities I learned: use reducer and use context. I made my own setup and styling.
 
 ### Resources
 
